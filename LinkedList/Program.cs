@@ -8,7 +8,7 @@ namespace LinkedListExample
         {
             MyLinkedList myLinkedList = new MyLinkedList();
 
-            myLinkedList.AddToEnd(new MyNode("Number 1"));
+            myLinkedList.AddToStart(new MyNode("Number 1"));
             myLinkedList.AddToEnd(new MyNode("Number 2"));
             myLinkedList.AddToEnd(new MyNode("Number 3"));
 

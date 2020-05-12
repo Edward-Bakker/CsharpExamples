@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C7B85A0B-6F80-4EE9-945E-51470F55FD63}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Recursie</RootNamespace>
-    <AssemblyName>Recursie</AssemblyName>
+    <RootNamespace>DelegateExample</RootNamespace>
+    <AssemblyName>DelegateExample</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
