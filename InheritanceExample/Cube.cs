@@ -13,5 +13,9 @@ namespace InheritanceExample
         {
             return "Im a Cube and I inherit properties from Rectangle!";
         }
+        public string CubeStuff()
+        {
+            return "Super Cuber, Abba songs define me...";
+        }
     }
 }
