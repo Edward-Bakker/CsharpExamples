@@ -6,7 +6,7 @@ namespace OOExample
     {
         private Horn Horn;
         private Engine Engine;
-        public Wheel[] Wheels = new Wheel[4];
+        private Wheel[] Wheels = new Wheel[4];
         /// <summary>
         /// Constructor for a default car
         /// </summary>
@@ -56,7 +56,5 @@ namespace OOExample
         {
             return Horn.MakeSound();
         }
-
-
     }
 }
