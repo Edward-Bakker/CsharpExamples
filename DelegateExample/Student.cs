@@ -2,14 +2,14 @@
 {
     struct Student
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string HairColour { get; set; }
+        public string Name { get; private set; }
+        public int Age { get; private set; }
+        public string HairColour { get; private set; }
         public Student(string name, int age, string hairColour) : this()
         {
-            this.Name = name;
-            this.Age = age;
-            this.HairColour = hairColour;
+            Name = name;
+            Age = age;
+            HairColour = hairColour;
         }
         public string GiveNameAndAge()
         {

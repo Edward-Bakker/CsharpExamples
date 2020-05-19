@@ -6,12 +6,10 @@ namespace LinkedListExample
     {
         public MyNode Start { get; set; }
         public int Length { get; private set; }
-
         public MyLinkedList()
         {
             Length = 0;
         }
-
         /// <summary>
         /// Adds a node to the start of the list
         /// </summary>
@@ -22,7 +20,6 @@ namespace LinkedListExample
             Start = node;
             Length++;
         }
-
         /// <summary>
         /// Adds a node to the end of the list
         /// </summary>
@@ -37,7 +34,6 @@ namespace LinkedListExample
                     currentNode = currentNode.Next;
                 }
                 currentNode.Next = node;
-                
             }
             else
             {
@@ -45,7 +41,6 @@ namespace LinkedListExample
             }
             Length++;
         }
-
         /// <summary>
         /// Gets a node from a certain index
         /// </summary>
@@ -67,7 +62,6 @@ namespace LinkedListExample
             }
             return null;
         }
-
         /// <summary>
         /// Traverses and prints the list
         /// </summary>
@@ -87,10 +81,5 @@ namespace LinkedListExample
             }
             return sb.ToString();
         }
-
-
-
-
-
     }
 }
