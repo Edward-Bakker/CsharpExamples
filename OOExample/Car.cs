@@ -8,28 +8,44 @@ namespace OOExample
 {
     class Car
     {
-        public Horn Horn { get; private set; }
-        public Engine Engine { get; set; }
+        private Horn Horn;
+        private Engine Engine;
         public Wheel[] Wheels = new Wheel[4];
 
         public Car()
         {
-            this.Horn = new Horn();
-            this.Engine = new Engine("Patatolie and Melk");
+            Horn = new Horn(Sound.train);
+            Engine = new Engine();
             Wheels[0] = new Wheel();
             Wheels[1] = new Wheel();
             Wheels[2] = new Wheel();
             Wheels[3] = new Wheel();   
         }
 
-        public string GiveEngineDetails()
+        public Car(string engineFuel, Sound s, Wheel[] wheels)
         {
-            return "The engine runs on" + Engine.FuelType;
+            Engine = new Engine(engineFuel);
+            Horn = new Horn(s);
+            Wheels = wheels;
         }
 
-        public void ChangeEngine()
+        public string GiveCarDetails()
         {
-            this.Engine = new Engine("Alcohol and cola");
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("===Car Details===");
+            sb.AppendLine("The engine runs on " + Engine.FuelType);
+            sb.AppendLine("The car has the following wheels:");
+            foreach (Wheel w in Wheels)
+            {
+                sb.AppendLine("A wheel with the colour " + w.WheelColour.ToString());
+            }
+            sb.Append("=================");
+            return sb.ToString();
+        }
+
+        public string HornHonk()
+        {
+            return Horn.MakeSound();
         }
 
 

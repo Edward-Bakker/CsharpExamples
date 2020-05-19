@@ -8,5 +8,15 @@ namespace OOExample
 {
     class Wheel
     {
+        public Colour WheelColour { get; private set; }
+
+        public Wheel(Colour wheelColour)
+        {
+            WheelColour = wheelColour;
+        }
+        public Wheel()
+        {
+            WheelColour = Colour.black;
+        }
     }
 }
