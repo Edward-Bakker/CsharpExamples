@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Threading.Tasks;
+
 
 namespace AsyncExample
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            await new Cook().CookPancakesAsync();
+            Console.ReadLine();
+            new Cook().CookPancakesSync();
+            Console.ReadLine();
         }
     }
 }

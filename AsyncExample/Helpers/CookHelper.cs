@@ -8,6 +8,7 @@ namespace AsyncExample
 {
     interface CookHelper
     {
-        public Task<bool> DoTask();
+        public Task<bool> DoTaskAsync();
+        public bool DoTaskSync();
     }
 }
