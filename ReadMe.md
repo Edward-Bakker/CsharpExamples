@@ -20,13 +20,13 @@ git clone https://github.com/Schmitzenbergh/CsharpExamples.git
 
 In the end you should have a multitude of projects containing one or more examples regarding the discussed C# topics.
 
-# What examples are available
+## What examples are available
 The following examples are available:
 - Asynchronous progamming with tasks
 - Delegates and how to use them
 - Object Oriented Programming 
 - Inheritance
-- The LinkedList datastructure (in a baisc form)
+- The LinkedList datastructure (in a basic form)
 
 ## Contributing
 We highly recommend every student to contribute examples or improvements to this repository. If you wish to do so, fork and clone the repository and add your changes in a new branch. Then make a pull request explaining what your contribution is. The website [OSSWatch](http://oss-watch.ac.uk/resources/pullrequest) has a nice common workflow that you could use.
