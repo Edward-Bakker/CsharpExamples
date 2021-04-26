@@ -18,7 +18,5 @@ namespace EventExample
                 Changed(this, EventArgs.Empty);//Everytime the Length property changes the length field, the "Changed" event will fire thus informing subscribers.
             }
         }
-
-        public int id { get; private set; }
     }
 }

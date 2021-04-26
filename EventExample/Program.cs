@@ -17,12 +17,12 @@ namespace EventExample
 
         private static void R_Changed(object sender, EventArgs e)
         {
-            try
+            try //We are "trying" the code on line 22 and 23.
             {
-                Rectangle r = (Rectangle)sender;
+                Rectangle r = (Rectangle)sender; //Because there is a possibility that this "cast" is not possible.
                 Console.WriteLine("Value changed: Length {0}", r.Length);
             }
-            catch(Exception ex)
+            catch(Exception ex) //If the cast fails, we catch the exception thus the application does not crash.
             {
                 Console.WriteLine("Error: {0}", ex.Message);
             }
