@@ -33,7 +33,18 @@ namespace InheritanceExample
             {
                 Console.WriteLine("Shape s is not a Cube, but another Shape...");
             }
-            Console.ReadLine();   
+            Console.ReadLine();
+
+            //If we print the name of all shapes in the list, we can get different outcomes due to the different types of shapes we have.
+            foreach (Shape shape in SL)
+            {
+                /* 
+                 * If the shape is a Rectangle ->  execute the rectangle "GiveName" method. 
+                 * If the shape is a Cube -> execute the cube "GiveName" method.
+                 * This "changing" of method outcomes is called Polymorphism.
+                 */
+                shape.GiveName(); 
+            }
         }
     }   
 }

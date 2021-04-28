@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventExample", "EventExampl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabindingExample", "DatabindingExample\DatabindingExample.csproj", "{3F897BF8-FAA2-496C-B28A-4BCBC793241D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueReferenceExample", "ValueReferenceExample\ValueReferenceExample.csproj", "{C1439DE1-78CD-4C28-A596-52902356AEA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3F897BF8-FAA2-496C-B28A-4BCBC793241D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F897BF8-FAA2-496C-B28A-4BCBC793241D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F897BF8-FAA2-496C-B28A-4BCBC793241D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1439DE1-78CD-4C28-A596-52902356AEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1439DE1-78CD-4C28-A596-52902356AEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1439DE1-78CD-4C28-A596-52902356AEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1439DE1-78CD-4C28-A596-52902356AEA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
