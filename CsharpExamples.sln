@@ -13,7 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOExample", "OOExample\OOEx
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncExample", "AsyncExample\AsyncExample.csproj", "{72D761ED-0E3C-4275-8472-5A052853A589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventExample", "EventExample\EventExample.csproj", "{D4FFAF56-3140-499F-8502-684FB21A6AB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventExample", "EventExample\EventExample.csproj", "{D4FFAF56-3140-499F-8502-684FB21A6AB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabindingExample", "DatabindingExample\DatabindingExample.csproj", "{3F897BF8-FAA2-496C-B28A-4BCBC793241D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D4FFAF56-3140-499F-8502-684FB21A6AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4FFAF56-3140-499F-8502-684FB21A6AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4FFAF56-3140-499F-8502-684FB21A6AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F897BF8-FAA2-496C-B28A-4BCBC793241D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F897BF8-FAA2-496C-B28A-4BCBC793241D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F897BF8-FAA2-496C-B28A-4BCBC793241D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F897BF8-FAA2-496C-B28A-4BCBC793241D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

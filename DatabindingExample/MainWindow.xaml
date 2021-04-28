@@ -1,0 +1,71 @@
+﻿<Window x:Class="DatabindingExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatabindingExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <!--We link the view to the MainWindowViewModel so it can funtion as the viewmodel voor this view-->
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    <!--Various UI components. Search online for a more detailed explaination! This UI is by no means a best practise in structure and is only there to illustrate the concepts of databinding-->
+    <Grid>
+        <DockPanel>
+            <Grid DockPanel.Dock="Left" Width="150">
+                <!-- We bind the Itemsoure of this Listbox to the public Movielist in the ViewModel. The same for the SelectedMovie in the list.-->
+                <ListBox x:Name="MoviesListBox" ItemsSource="{Binding MovieList}" SelectedItem="{Binding SelectedMovie}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <!-- As MovieList is out Itemsource, we can bind to the objects in that list (Movie) and their properties. -->
+                                <TextBlock Text="{Binding Title}" Margin="0,0,5,0"/>
+                                <TextBlock Text="|" Margin="0,0,5,0"/>
+                                <TextBlock Text="{Binding Genre}" Margin="0,0,5,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            <Separator Height="4" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="Black" />
+            <Label Content="Movie information" DockPanel.Dock="Top" FontSize="20" FontWeight="Bold"/>
+            <Separator Height="4" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="Black" DockPanel.Dock="Top"/>
+            <Grid DockPanel.Dock="Right" Name="MovieInfoGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical" Grid.Column="0" >
+                    <!-- We want to show the actual selected movie from the listbox here. That is why we bind to the selectedmovie and its properties-->
+                    <Label Content="Title" FontFamily="Arial Black" FontSize="18"/>
+                    <Separator Grid.Column="0"/>
+                    <TextBlock Text="{Binding SelectedMovie.Title}"/>
+                    <Separator Grid.Column="0"/>
+                    <Label Content="Genre" FontFamily="Arial Black" FontSize="18"/>
+                    <Separator Grid.Column="0"/>
+                    <TextBlock Text="{Binding SelectedMovie.Genre}"/>
+                    <Separator Grid.Column="0"/>
+                    <Label Content="Image host" FontFamily="Arial Black" FontSize="18"/>
+                    <Separator Grid.Column="0"/>
+                    <TextBlock Text="{Binding SelectedMovie.ImageLocation.Host}" TextWrapping="Wrap"/>
+                    <Separator Grid.Column="0"/>
+                    <Label Content="Rating" FontFamily="Arial Black" FontSize="18"/>
+                    <Separator Grid.Column="0"/>
+                    <TextBlock Text="{Binding SelectedMovie.Rating}"/>
+                </StackPanel>
+                <!-- This is an alternative to the stackpanel from line 39 to 56. (Without the Gui styling)
+                     Instead of binding to every selectedmovie property with the "SelectedMovie" prefix, we set the datacontext of the stackpanel to the SelectedMovie property. 
+                     Now we can now bind to the properties without the "SelectedMovie" prefix.
+                <StackPanel Orientation="Vertical" Grid.Column="0" DataContext="{Binding SelectedMovie}">       
+                    <TextBlock Text="{Binding Title}"/>
+                    <TextBlock Text="{Binding Genre}"/>
+                    <TextBlock Text="{Binding ImageLocation.AbsolutePath}"/>
+                    <TextBlock Text="{Binding Rating}"/>
+                </StackPanel>
+                --> 
+                <Image Source="{Binding SelectedMovie.ImageLocation}" Grid.Column="1" MinWidth="250"/>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>
