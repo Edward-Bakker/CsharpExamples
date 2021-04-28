@@ -22,7 +22,7 @@ namespace InheritanceExample
              */
 
             //s.CubeStuff();
-
+            
             if (s is Cube) //If s is of type Cube, then we can cast it (dress it up) as a Cube it actually is.
             {
                 Cube c = (Cube)s;
@@ -43,8 +43,9 @@ namespace InheritanceExample
                  * If the shape is a Cube -> execute the cube "GiveName" method.
                  * This "changing" of method outcomes is called Polymorphism.
                  */
-                shape.GiveName(); 
+                Console.WriteLine(shape.GiveName()); 
             }
+            Console.ReadLine();
         }
     }   
 }
