@@ -1,4 +1,4 @@
-﻿namespace LessonAssignment
+﻿namespace EventArgsExample
 {
     class Student
     {

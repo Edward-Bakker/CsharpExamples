@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LessonAssignment
+namespace EventArgsExample
 {
     public class StudentAddedEventArgs : EventArgs
     {
