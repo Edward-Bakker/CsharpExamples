@@ -13,6 +13,7 @@ namespace EventExample
             r.Length = 10; //We change the Length, thus the event should fire. 
             r.Length = 20;
             r.Length = 30;
+            r.Width = 5;
         }
 
         private static void R_Changed(object sender, EventArgs e)
@@ -20,7 +21,8 @@ namespace EventExample
             try //We are "trying" the code on line 22 and 23.
             {
                 Rectangle r = (Rectangle)sender; //Because there is a possibility that this "cast" is not possible.
-                Console.WriteLine("Value changed: Length {0}", r.Length);
+                RectangleChangedEventArgs args = (RectangleChangedEventArgs)e;
+                Console.WriteLine("Value changed: Length {0}, Width {1} at {2}", args.Length, args.Width, args.Date );
             }
             catch(Exception ex) //If the cast fails, we catch the exception thus the application does not crash.
             {
