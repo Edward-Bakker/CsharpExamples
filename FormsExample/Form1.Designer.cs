@@ -103,7 +103,7 @@
             this.Controls.Add(this.plusInputR);
             this.Controls.Add(this.plusInputL);
             this.Name = "FormExample";
-            this.Text = "Form1";
+            this.Text = "FormExample";
             ((System.ComponentModel.ISupportInitialize)(this.plusInputL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plusInputR)).EndInit();
             this.ResumeLayout(false);
