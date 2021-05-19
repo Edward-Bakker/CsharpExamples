@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabindingExample", "Datab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueReferenceExample", "ValueReferenceExample\ValueReferenceExample.csproj", "{C1439DE1-78CD-4C28-A596-52902356AEA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsExample", "FormsExample\FormsExample.csproj", "{176F9EF2-AA40-42AF-9C3D-4584230820B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsExample", "FormsExample\FormsExample.csproj", "{176F9EF2-AA40-42AF-9C3D-4584230820B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceExample", "ServiceExample\ServiceExample.csproj", "{9762B879-81D9-487B-AF66-41884077C825}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{176F9EF2-AA40-42AF-9C3D-4584230820B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{176F9EF2-AA40-42AF-9C3D-4584230820B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{176F9EF2-AA40-42AF-9C3D-4584230820B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9762B879-81D9-487B-AF66-41884077C825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9762B879-81D9-487B-AF66-41884077C825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9762B879-81D9-487B-AF66-41884077C825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9762B879-81D9-487B-AF66-41884077C825}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
