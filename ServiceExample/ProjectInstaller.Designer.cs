@@ -36,12 +36,12 @@
             this.serviceProcessInstaller1.Account = System.ServiceProcess.ServiceAccount.LocalService;
             this.serviceProcessInstaller1.Password = null;
             this.serviceProcessInstaller1.Username = null;
+            this.serviceProcessInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.serviceProcessInstaller1_AfterInstall);
             // 
             // serviceInstaller1
             // 
             this.serviceInstaller1.Description = "The NHL-Stenden Service Example project for use in C#1";
             this.serviceInstaller1.ServiceName = "NHL-Stenden ServiceExample";
-            this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Disabled;
             // 
             // ProjectInstaller
             // 
