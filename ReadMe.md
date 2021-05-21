@@ -30,6 +30,7 @@ The following examples are available:
 - Copy by reference and value
 - Databinding
 - Basic Windows Form
+- Basci Windows Service and Installer
 
 ## Contributing
 We highly recommend every student to contribute examples or improvements to this repository. If you wish to do so, fork and clone the repository and add your changes in a new branch. Then make a pull request explaining what your contribution is. The website [OSSWatch](http://oss-watch.ac.uk/resources/pullrequest) has a nice common workflow that you could use.
